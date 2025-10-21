@@ -14,7 +14,7 @@ import { fileURLToPath } from "url";
 import { getVoiceChannels, hasMembers, playAudio } from "./utils/voice.js";
 // import { askLimit } from "./utils/redis.js";
 
-console.log("Starting up Oskar");
+console.log("Starting up Morris");
 
 dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
