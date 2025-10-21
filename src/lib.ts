@@ -182,11 +182,8 @@ export async function genMistyOutput(
         .reverse()
         .map((message) => getMessageContentOrParts(message)),
       tools: {
-        playMusic: playMusicTool,
         myself: myselfTool,
         sendMessage: sendMessageTool,
-        stopPlaying: stopPlayingTool,
-        whatSong: whatSongTool,
       },
       toolChoice: "required",
     });
