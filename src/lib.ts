@@ -19,6 +19,7 @@ const googleClient = createGoogleGenerativeAI({
 });
 
 const emojis: Record<string, { completeEmoji: string; description: string }> = {
+  morrismeew: {completeEmoji: "<:morrismeew:1444743301424091348>", description: "This is you looking at the camera in a zoomed in pose. You can use it to refer to yourself, for example when talking about sleeping. People and cats that are in this pose a lot (or \"meew a lot\") are called meewchens."
 };
 
 function makeCompleteEmoji(text: string) {
