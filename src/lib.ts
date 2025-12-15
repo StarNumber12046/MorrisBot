@@ -2,7 +2,7 @@ import { createGroq } from "@ai-sdk/groq";
 import {
   generateText,
   tool,
-  type FilePart,
+  type TextPart,
 } from "ai";
 import { VoiceChannel, type Message } from "discord.js";
 import { z } from "zod/v3";
