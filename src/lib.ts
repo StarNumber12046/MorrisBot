@@ -13,7 +13,7 @@ import { getVoiceConnection } from "@discordjs/voice";
 import NodeID3 from "node-id3";
 
 
-const MODEL = "meta-llama/llama-4-scout-17b-16e-instruct";
+const MODEL = "openai/gpt-oss-120b";
 
 const groqClient = createGroq({
   apiKey: process.env.GROQ_API_KEY,
@@ -181,7 +181,6 @@ export async function genMistyOutput(
         myself: myselfTool,
         sendMessage: sendMessageTool,
       },
-      toolChoice: "required",
     });
 
     const text = response.text;
