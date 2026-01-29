@@ -13,7 +13,7 @@ import { getVoiceConnection } from "@discordjs/voice";
 import NodeID3 from "node-id3";
 
 
-const MODEL = "openai/gpt-oss-120b";
+const MODEL = "moonshotai/kimi-k2-instruct-0905";
 
 const groqClient = createGroq({
   apiKey: process.env.GROQ_API_KEY,
