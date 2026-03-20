@@ -49,17 +49,17 @@ export default {
             await imageBufferResponse.arrayBuffer(),
           );
           await interaction.followUp({ files: [imageBuffer] });
-          interaction.followUp({ files: [imageBuffer] });
         },
       );
 
       return;
+    } else {
+      const imageResponse = await fetch(
+        "https://morrisapi.starnumber12046.workers.dev/morris",
+      );
+      const imageData = Buffer.from(await imageResponse.arrayBuffer());
+      console.log(imageData.length);
+      await interaction.followUp({ files: [imageData] });
     }
-    const imageResponse = await fetch(
-      "https://morrisapi.starnumber12046.workers.dev/morris",
-    );
-    const imageData = Buffer.from(await imageResponse.arrayBuffer());
-    console.log(imageData.length);
-    await interaction.followUp({ files: [imageData] });
   },
 };
